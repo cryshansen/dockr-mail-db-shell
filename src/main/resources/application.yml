@@ -1,0 +1,11 @@
+
+
+# application.yml
+
+#: OpenAI: one key → all endpoints.
+openai:
+  # if environment var then its this.   
+  apiKey: ${OPENAI_API_KEY:}  # One key for both chat + TTS
+  chatModel: gpt-4o-mini
+  ttsModel: gpt-4o-mini-tts
+
