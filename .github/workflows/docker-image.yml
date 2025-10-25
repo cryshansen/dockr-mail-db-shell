@@ -1,4 +1,4 @@
-name: Build & Test Spring Boot Docker App
+name: Build & Test Spring Boot Docker App test
 
 on:
   push:
