@@ -35,8 +35,10 @@ public class ShellController {
     public String sendTestEmail() {
         try {
             emailService.sendTestEmail("test@local.dev");
+            System.out.println("Test email Sent");
             return "✅ Test email sent successfully!";
         } catch (Exception e) {
+        	System.out.println("Test email failed");
             return "❌ Email send failed: " + e.getMessage();
         }
     }
